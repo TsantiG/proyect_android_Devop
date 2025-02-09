@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">depov_app</string>
+    <string name="text_login">  Bienvenido</string>
+    <string name="text_email">Ingrese su correo</string>
+    <string name="text_pass">Ingrese su contraseña</string>
+    <string name="text_btn_login">"  Ingresar"</string>
+    <string name="text_login_register">"   Registrate"</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="text_register">Crea tu Cuenta</string>
+    <string name="text_btn_register">Crear</string>
+    <string name="text_descripcion_home">Estamos muy contentos de que hayas elegido Devop, una aplicación creada con el propósito de ofrecerte la seguridad y tranquilidad que mereces en tu día a día.</string>
+    <string name="text_home_user_bienvenida">Bienvenida</string>
+    <string name="text_name_user_conf">user name</string>
+    <string-array name="genero_options">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+        <item>Prefiero no decirlo</item>
+    </string-array>
+</resources>

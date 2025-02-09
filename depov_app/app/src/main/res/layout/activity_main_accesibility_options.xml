@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_opac"
+    tools:context=".MainAccesibilityOptions">
+
+    <ImageView
+        android:id="@+id/img_back_options"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/icon_back"
+        android:layout_margin="@dimen/dp_10"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_title_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configuración"
+        android:textColor="@color/rose_intence"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_back_options"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginVertical="16dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_options"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_option_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modo claro/oscuro"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_options"
+        app:layout_constraintBottom_toTopOf="@id/tv_option_size"
+        />
+
+    <TextView
+        android:id="@+id/tv_option_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tamaño de texto"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_option_theme"
+        app:layout_constraintBottom_toTopOf="@id/tv_option_privacy"
+        />
+
+    <TextView
+        android:id="@+id/tv_option_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Permisos"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_option_size"
+        app:layout_constraintBottom_toTopOf="@id/tv_option_condicions"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_option_condicions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terminos y condiciones"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_option_privacy"
+        app:layout_constraintBottom_toTopOf="@id/tv_option_notification"
+        />
+
+    <TextView
+        android:id="@+id/tv_option_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_option_condicions"
+        app:layout_constraintBottom_toTopOf="@id/tv_option_support"
+        />
+
+    <TextView
+        android:id="@+id/tv_option_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soporte tecnico"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_option_notification"
+        app:layout_constraintBottom_toTopOf="@id/tv_option_help"
+        />
+
+    <TextView
+        android:id="@+id/tv_option_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Centro de ayuda"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+
+
+        app:layout_constraintTop_toBottomOf="@id/tv_option_support"
+        app:layout_constraintBottom_toTopOf="@+id/tv_option_delete_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_option_delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar cuenta"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border_button"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:padding="@dimen/dp_5"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_option_help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
