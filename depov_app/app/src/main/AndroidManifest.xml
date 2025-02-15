@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Depov_app"
         tools:targetApi="31">
         <activity
+            android:name=".MainMessage"
+            android:exported="false" />
+        <activity
+            android:name=".MainUserPerfil"
+            android:exported="false" />
+        <activity
             android:name=".MainAccesibilityOptions"
             android:exported="false" />
         <activity

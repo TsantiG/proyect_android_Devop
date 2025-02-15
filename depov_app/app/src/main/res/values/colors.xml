@@ -10,5 +10,6 @@
     <color name="black_opac">#303030</color>
     <color name="red">#9D0000</color>
     <color name="rose_intence">#FF2457</color>
+    <color name="white_user">#C5D9D9D9</color>
 
 </resources>

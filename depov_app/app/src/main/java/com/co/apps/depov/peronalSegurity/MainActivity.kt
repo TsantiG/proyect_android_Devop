@@ -21,13 +21,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btninit()
-        btnhome()
-        btnredes()
+        viewsInit()
+        btnHome()
+        btnRedes()
 
     }
 
-    fun btninit(){
+    fun viewsInit(){
         btnregister = findViewById(R.id.btn_register_home)
         btnlogin = findViewById(R.id.btn_login_home)
         btnfacebook = findViewById(R.id.img_facebook_home)
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         btninstagram = findViewById(R.id.img_instagram_home)
     }
 
-    fun btnhome(){
+    fun btnHome(){
         btnregister.setOnClickListener {
             val intent = Intent(this, MainRegister::class.java)
             startActivity(intent)
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun btnredes(){
+    fun btnRedes(){
         btnfacebook.setOnClickListener {
             val url = "https://www.facebook.com/depov.com"
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
